@@ -302,7 +302,7 @@ namespace GenerateRandomScatter
 
         static void Main(string[] args)
         {
-            int plotsCount = 500;
+            int plotsCount = 50;
 
             _vocSerializer = new PascalVocXmlSerializer();
             _random = new Random(42);
@@ -908,6 +908,8 @@ namespace GenerateRandomScatter
 
 
             // *******************************************************
+            // ***************** DRAW BOUNDING BOXES *****************
+            // *******************************************************
             /*using (var image = new Bitmap(Path.Combine(RootFoler, ImageFolder, name + ".png")))
             {
                 using (Graphics g = Graphics.FromImage(image))
@@ -1288,15 +1290,6 @@ namespace GenerateRandomScatter
 
             return new Tuple<IEnumerable<RectangleF>, IEnumerable<RectangleF>>(boxes_x, boxes_y);
         }
-
-        //public static object get_ground_truth(Axis xAxis, Axis yAxis, int dpi, ScatterSeries scatterSerie)
-        //{
-        //    var point_boxes = get_data_pixel(xAxis, yAxis, dpi, scatterSerie);
-        //    var tick_boxes = get_tick_pixel(xAxis, yAxis, dpi);
-        //    //var label_boxes = get_label_pixel(xAxis, yAxis);
-        //    var y_labels = get_label_value(xAxis, yAxis);
-        //    return point_boxes;
-        //}
 
         private const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz,0123456789       ";
 

@@ -106,6 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Examples\plot_15.pdf" />
     <None Include="Examples\plot_15_gt.json" />
     <None Include="Examples\plot_15_gtt.json" />
     <None Include="Examples\plot_15_model.json" />
@@ -114,6 +115,7 @@
   <ItemGroup>
     <Content Include="Examples\plot_15.png" />
     <Content Include="Examples\plot_15.xml" />
+    <Content Include="Examples\plot_15_bbox.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Accord.3.8.0\build\Accord.targets" Condition="Exists('..\packages\Accord.3.8.0\build\Accord.targets')" />
