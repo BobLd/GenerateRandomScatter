@@ -1,0 +1,2273 @@
+{
+  "DefaultFont": "Segoe UI",
+  "DefaultFontSize": 12.0,
+  "ActualCulture": "en-GB",
+  "ActualPlotMargins": {
+    "Bottom": 0.0,
+    "Height": -66.789268535912839,
+    "Left": 0.0,
+    "Right": 90.289405243318356,
+    "Top": 66.789268535912839,
+    "Width": 90.289405243318356
+  },
+  "PlotView": null,
+  "Annotations": [],
+  "Axes": [
+    {
+      "InvalidNumberColor": {
+        "A": 255,
+        "B": 128,
+        "G": 128,
+        "R": 128
+      },
+      "HighColor": {
+        "A": 0,
+        "B": 0,
+        "G": 0,
+        "R": 0
+      },
+      "LowColor": {
+        "A": 0,
+        "B": 0,
+        "G": 0,
+        "R": 0
+      },
+      "Palette": {
+        "Colors": [
+          {
+            "A": 255,
+            "B": 138,
+            "G": 196,
+            "R": 0
+          },
+          {
+            "A": 255,
+            "B": 8,
+            "G": 132,
+            "R": 0
+          },
+          {
+            "A": 255,
+            "B": 255,
+            "G": 242,
+            "R": 0
+          }
+        ]
+      },
+      "RenderAsImage": false,
+      "FormatAsFractions": false,
+      "FractionUnit": 1.0,
+      "FractionUnitSymbol": null,
+      "AbsoluteMaximum": 1.7976931348623157E+308,
+      "AbsoluteMinimum": -1.7976931348623157E+308,
+      "ActualMajorStep": 0.5,
+      "ActualMaximum": 2.0,
+      "ActualMinimum": 0.0,
+      "ActualMinorStep": 0.1,
+      "ActualStringFormat": "g6",
+      "ActualTitle": null,
+      "Angle": 0.0,
+      "AxisTickToLabelDistance": 4.0,
+      "AxisTitleDistance": 4.0,
+      "AxisDistance": 20.0,
+      "AxislineColor": {
+        "A": 255,
+        "B": 0,
+        "G": 0,
+        "R": 0
+      },
+      "AxislineStyle": 10,
+      "AxislineThickness": 1.0,
+      "ClipTitle": true,
+      "CropGridlines": false,
+      "DataMaximum": 2.0,
+      "DataMinimum": 0.0,
+      "EndPosition": 1.0,
+      "ExtraGridlineColor": {
+        "A": 255,
+        "B": 0,
+        "G": 0,
+        "R": 0
+      },
+      "ExtraGridlineStyle": 0,
+      "ExtraGridlineThickness": 1.0,
+      "ExtraGridlines": null,
+      "FilterFunction": null,
+      "FilterMaxValue": 1.7976931348623157E+308,
+      "FilterMinValue": -1.7976931348623157E+308,
+      "IntervalLength": 60.0,
+      "IsAxisVisible": true,
+      "IsPanEnabled": false,
+      "IsReversed": false,
+      "IsZoomEnabled": false,
+      "Key": null,
+      "LabelFormatter": null,
+      "Layer": 0,
+      "MajorGridlineColor": {
+        "A": 64,
+        "B": 0,
+        "G": 0,
+        "R": 0
+      },
+      "MajorGridlineStyle": 10,
+      "MajorGridlineThickness": 1.0,
+      "MajorStep": "NaN",
+      "MajorTickSize": 7.0,
+      "Maximum": 2.0,
+      "MaximumPadding": 0.01,
+      "MaximumRange": "Infinity",
+      "Minimum": 0.0,
+      "MinimumMajorStep": 0.0,
+      "MinimumMinorStep": 0.0,
+      "MinimumPadding": 0.01,
+      "MinimumRange": 0.0,
+      "MinorGridlineColor": {
+        "A": 32,
+        "B": 0,
+        "G": 0,
+        "R": 0
+      },
+      "MinorGridlineStyle": 10,
+      "MinorGridlineThickness": 1.0,
+      "MinorStep": "NaN",
+      "MinorTicklineColor": {
+        "A": 0,
+        "B": 1,
+        "G": 0,
+        "R": 0
+      },
+      "MinorTickSize": 4.0,
+      "Offset": 2.6197597603356479,
+      "Position": 0,
+      "PositionAtZeroCrossing": false,
+      "PositionTier": 0,
+      "Scale": -192.00233838829359,
+      "ScreenMax": {
+        "X": 118.99532322341281,
+        "Y": 503.0
+      },
+      "ScreenMin": {
+        "X": 503.0,
+        "Y": 118.99532322341281
+      },
+      "StartPosition": 0.0,
+      "StringFormat": null,
+      "TickStyle": 2,
+      "TicklineColor": {
+        "A": 255,
+        "B": 0,
+        "G": 0,
+        "R": 0
+      },
+      "Title": null,
+      "TitleClippingLength": 0.9,
+      "TitleColor": {
+        "A": 0,
+        "B": 1,
+        "G": 0,
+        "R": 0
+      },
+      "TitleFont": null,
+      "TitleFontSize": "NaN",
+      "TitleFontWeight": 400.0,
+      "TitleFormatString": "{0} [{1}]",
+      "TitlePosition": 0.5,
+      "Unit": null,
+      "UseSuperExponentialFormat": false,
+      "DesiredSize": {
+        "Height": 0.0,
+        "Width": 0.0
+      },
+      "Font": null,
+      "FontSize": "NaN",
+      "FontWeight": 400.0,
+      "Tag": null,
+      "TextColor": {
+        "A": 0,
+        "B": 1,
+        "G": 0,
+        "R": 0
+      },
+      "ToolTip": null,
+      "Selectable": true,
+      "SelectionMode": 0
+    },
+    {
+      "FormatAsFractions": false,
+      "FractionUnit": 1.0,
+      "FractionUnitSymbol": null,
+      "AbsoluteMaximum": 1.7976931348623157E+308,
+      "AbsoluteMinimum": -1.7976931348623157E+308,
+      "ActualMajorStep": 500.0,
+      "ActualMaximum": 28.066067320795341,
+      "ActualMinimum": -3511.7589622300979,
+      "ActualMinorStep": 100.0,
+      "ActualStringFormat": "g6",
+      "ActualTitle": "Ir2lWRD",
+      "Angle": 0.0,
+      "AxisTickToLabelDistance": 4.0,
+      "AxisTitleDistance": 4.0,
+      "AxisDistance": 0.0,
+      "AxislineColor": {
+        "A": 255,
+        "B": 0,
+        "G": 0,
+        "R": 0
+      },
+      "AxislineStyle": 0,
+      "AxislineThickness": 1.0,
+      "ClipTitle": true,
+      "CropGridlines": false,
+      "DataMaximum": -6.6346975998094422,
+      "DataMinimum": -3476.7111896602873,
+      "EndPosition": 1.0,
+      "ExtraGridlineColor": {
+        "A": 255,
+        "B": 0,
+        "G": 0,
+        "R": 0
+      },
+      "ExtraGridlineStyle": 0,
+      "ExtraGridlineThickness": 1.0,
+      "ExtraGridlines": null,
+      "FilterFunction": null,
+      "FilterMaxValue": 1.7976931348623157E+308,
+      "FilterMinValue": -1.7976931348623157E+308,
+      "IntervalLength": 60.0,
+      "IsAxisVisible": true,
+      "IsPanEnabled": true,
+      "IsReversed": false,
+      "IsZoomEnabled": true,
+      "Key": null,
+      "LabelFormatter": null,
+      "Layer": 0,
+      "MajorGridlineColor": {
+        "A": 64,
+        "B": 0,
+        "G": 0,
+        "R": 0
+      },
+      "MajorGridlineStyle": 5,
+      "MajorGridlineThickness": 1.0,
+      "MajorStep": "NaN",
+      "MajorTickSize": 3.6716360019853509,
+      "Maximum": "NaN",
+      "MaximumPadding": 0.01,
+      "MaximumRange": "Infinity",
+      "Minimum": "NaN",
+      "MinimumMajorStep": 0.0,
+      "MinimumMinorStep": 0.0,
+      "MinimumPadding": 0.01,
+      "MinimumRange": 0.0,
+      "MinorGridlineColor": {
+        "A": 32,
+        "B": 0,
+        "G": 0,
+        "R": 0
+      },
+      "MinorGridlineStyle": 10,
+      "MinorGridlineThickness": 1.0,
+      "MinorStep": "NaN",
+      "MinorTicklineColor": {
+        "A": 0,
+        "B": 1,
+        "G": 0,
+        "R": 0
+      },
+      "MinorTickSize": 0.0,
+      "Offset": -3546.6895532690696,
+      "Position": 3,
+      "PositionAtZeroCrossing": false,
+      "PositionTier": 0,
+      "Scale": 0.22902561227992069,
+      "ScreenMax": {
+        "X": 818.71059475668164,
+        "Y": 8.0
+      },
+      "ScreenMin": {
+        "X": 8.0,
+        "Y": 818.71059475668164
+      },
+      "StartPosition": 0.0,
+      "StringFormat": null,
+      "TickStyle": 0,
+      "TicklineColor": {
+        "A": 255,
+        "B": 0,
+        "G": 0,
+        "R": 0
+      },
+      "Title": "Ir2lWRD",
+      "TitleClippingLength": 0.9,
+      "TitleColor": {
+        "A": 0,
+        "B": 1,
+        "G": 0,
+        "R": 0
+      },
+      "TitleFont": "Times",
+      "TitleFontSize": 13.0,
+      "TitleFontWeight": 400.0,
+      "TitleFormatString": "{0} [{1}]",
+      "TitlePosition": 0.5,
+      "Unit": null,
+      "UseSuperExponentialFormat": false,
+      "DesiredSize": {
+        "Height": 66.789268535912839,
+        "Width": 0.0
+      },
+      "Font": "Times",
+      "FontSize": 11.0,
+      "FontWeight": 400.0,
+      "Tag": null,
+      "TextColor": {
+        "A": 0,
+        "B": 1,
+        "G": 0,
+        "R": 0
+      },
+      "ToolTip": null,
+      "Selectable": true,
+      "SelectionMode": 0
+    },
+    {
+      "FormatAsFractions": false,
+      "FractionUnit": 1.0,
+      "FractionUnitSymbol": null,
+      "AbsoluteMaximum": 1.7976931348623157E+308,
+      "AbsoluteMinimum": -1.7976931348623157E+308,
+      "ActualMajorStep": 2000.0,
+      "ActualMaximum": 9673.046680675403,
+      "ActualMinimum": 174.34289361200356,
+      "ActualMinorStep": 500.0,
+      "ActualStringFormat": "g6",
+      "ActualTitle": "yECZO1",
+      "Angle": 0.0,
+      "AxisTickToLabelDistance": 4.0,
+      "AxisTitleDistance": 4.0,
+      "AxisDistance": 0.0,
+      "AxislineColor": {
+        "A": 255,
+        "B": 0,
+        "G": 0,
+        "R": 0
+      },
+      "AxislineStyle": 0,
+      "AxislineThickness": 1.0,
+      "ClipTitle": true,
+      "CropGridlines": false,
+      "DataMaximum": 9579.9312627059553,
+      "DataMinimum": 268.38946576114614,
+      "EndPosition": 1.0,
+      "ExtraGridlineColor": {
+        "A": 255,
+        "B": 0,
+        "G": 0,
+        "R": 0
+      },
+      "ExtraGridlineStyle": 0,
+      "ExtraGridlineThickness": 1.0,
+      "ExtraGridlines": null,
+      "FilterFunction": null,
+      "FilterMaxValue": 1.7976931348623157E+308,
+      "FilterMinValue": -1.7976931348623157E+308,
+      "IntervalLength": 60.0,
+      "IsAxisVisible": true,
+      "IsPanEnabled": true,
+      "IsReversed": false,
+      "IsZoomEnabled": true,
+      "Key": null,
+      "LabelFormatter": null,
+      "Layer": 0,
+      "MajorGridlineColor": {
+        "A": 64,
+        "B": 0,
+        "G": 0,
+        "R": 0
+      },
+      "MajorGridlineStyle": 5,
+      "MajorGridlineThickness": 1.0,
+      "MajorStep": "NaN",
+      "MajorTickSize": 3.6716360019853509,
+      "Maximum": "NaN",
+      "MaximumPadding": 0.01,
+      "MaximumRange": "Infinity",
+      "Minimum": "NaN",
+      "MinimumMajorStep": 0.0,
+      "MinimumMinorStep": 0.0,
+      "MinimumPadding": 0.01,
+      "MinimumRange": 0.0,
+      "MinorGridlineColor": {
+        "A": 32,
+        "B": 0,
+        "G": 0,
+        "R": 0
+      },
+      "MinorGridlineStyle": 10,
+      "MinorGridlineThickness": 1.0,
+      "MinorStep": "NaN",
+      "MinorTicklineColor": {
+        "A": 0,
+        "B": 1,
+        "G": 0,
+        "R": 0
+      },
+      "MinorTickSize": 0.0,
+      "Offset": 12616.503871960263,
+      "Position": 2,
+      "PositionAtZeroCrossing": false,
+      "PositionTier": 0,
+      "Scale": -0.040427060932205924,
+      "ScreenMax": {
+        "X": 118.99532322341281,
+        "Y": 503.0
+      },
+      "ScreenMin": {
+        "X": 503.0,
+        "Y": 118.99532322341281
+      },
+      "StartPosition": 0.0,
+      "StringFormat": null,
+      "TickStyle": 2,
+      "TicklineColor": {
+        "A": 255,
+        "B": 0,
+        "G": 0,
+        "R": 0
+      },
+      "Title": "yECZO1",
+      "TitleClippingLength": 0.9,
+      "TitleColor": {
+        "A": 0,
+        "B": 1,
+        "G": 0,
+        "R": 0
+      },
+      "TitleFont": "Times",
+      "TitleFontSize": 13.0,
+      "TitleFontWeight": 400.0,
+      "TitleFormatString": "{0} [{1}]",
+      "TitlePosition": 0.5,
+      "Unit": null,
+      "UseSuperExponentialFormat": false,
+      "DesiredSize": {
+        "Height": 0.0,
+        "Width": 90.289405243318356
+      },
+      "Font": "Times",
+      "FontSize": 11.0,
+      "FontWeight": 400.0,
+      "Tag": null,
+      "TextColor": {
+        "A": 0,
+        "B": 1,
+        "G": 0,
+        "R": 0
+      },
+      "ToolTip": null,
+      "Selectable": true,
+      "SelectionMode": 0
+    }
+  ],
+  "Background": {
+    "A": 0,
+    "B": 0,
+    "G": 0,
+    "R": 0
+  },
+  "Culture": null,
+  "DefaultColors": [
+    {
+      "A": 255,
+      "B": 138,
+      "G": 196,
+      "R": 0
+    },
+    {
+      "A": 255,
+      "B": 8,
+      "G": 132,
+      "R": 0
+    },
+    {
+      "A": 255,
+      "B": 255,
+      "G": 242,
+      "R": 0
+    }
+  ],
+  "IsLegendVisible": true,
+  "LegendArea": {
+    "Bottom": 126.99532322341284,
+    "Height": 0.0,
+    "Left": 810.71059475668164,
+    "Right": 810.71059475668164,
+    "Top": 126.99532322341284,
+    "Width": 0.0,
+    "Center": {
+      "X": 810.71059475668164,
+      "Y": 126.99532322341284
+    }
+  },
+  "LegendBackground": {
+    "A": 0,
+    "B": 0,
+    "G": 0,
+    "R": 0
+  },
+  "LegendBorder": {
+    "A": 0,
+    "B": 0,
+    "G": 0,
+    "R": 0
+  },
+  "LegendBorderThickness": 1.0,
+  "LegendColumnSpacing": 8.0,
+  "LegendFont": null,
+  "LegendFontSize": 12.0,
+  "LegendTextColor": {
+    "A": 0,
+    "B": 1,
+    "G": 0,
+    "R": 0
+  },
+  "LegendFontWeight": 400.0,
+  "LegendItemAlignment": -1,
+  "LegendItemOrder": 0,
+  "LegendItemSpacing": 24.0,
+  "LegendLineSpacing": 0.0,
+  "LegendMargin": 8.0,
+  "LegendMaxWidth": "NaN",
+  "LegendMaxHeight": "NaN",
+  "LegendOrientation": 1,
+  "LegendPadding": 8.0,
+  "LegendPlacement": 0,
+  "LegendPosition": 9,
+  "LegendSymbolLength": 16.0,
+  "LegendSymbolMargin": 4.0,
+  "LegendSymbolPlacement": 0,
+  "LegendTitle": null,
+  "LegendTitleColor": {
+    "A": 0,
+    "B": 1,
+    "G": 0,
+    "R": 0
+  },
+  "LegendTitleFont": null,
+  "LegendTitleFontSize": 12.0,
+  "LegendTitleFontWeight": 700.0,
+  "Padding": {
+    "Bottom": 8.0,
+    "Height": 0.0,
+    "Left": 8.0,
+    "Right": 8.0,
+    "Top": 8.0,
+    "Width": 0.0
+  },
+  "Width": 917.0,
+  "Height": 511.0,
+  "PlotAndAxisArea": {
+    "Bottom": 503.0,
+    "Height": 450.7939453125,
+    "Left": 8.0,
+    "Right": 909.0,
+    "Top": 52.2060546875,
+    "Width": 901.0,
+    "Center": {
+      "X": 458.5,
+      "Y": 277.60302734375
+    }
+  },
+  "PlotArea": {
+    "Bottom": 503.0,
+    "Height": 384.00467677658719,
+    "Left": 8.0,
+    "Right": 818.71059475668164,
+    "Top": 118.99532322341284,
+    "Width": 810.71059475668164,
+    "Center": {
+      "X": 413.35529737834082,
+      "Y": 310.99766161170646
+    }
+  },
+  "AxisTierDistance": 4.0,
+  "PlotAreaBackground": {
+    "A": 0,
+    "B": 0,
+    "G": 0,
+    "R": 0
+  },
+  "PlotAreaBorderColor": {
+    "A": 255,
+    "B": 0,
+    "G": 0,
+    "R": 0
+  },
+  "PlotAreaBorderThickness": {
+    "Bottom": 0.0,
+    "Height": 0.0,
+    "Left": 0.0,
+    "Right": 0.0,
+    "Top": 0.0,
+    "Width": 0.0
+  },
+  "PlotMargins": {
+    "Bottom": "NaN",
+    "Height": "NaN",
+    "Left": "NaN",
+    "Right": "NaN",
+    "Top": "NaN",
+    "Width": "NaN"
+  },
+  "PlotType": 0,
+  "Series": [
+    {
+      "Points": [
+        {
+          "X": -1405.6215457252265,
+          "Y": 5910.1514697535868,
+          "Size": 8.359432815741485,
+          "Value": 2.0,
+          "Tag": null
+        },
+        {
+          "X": -793.53816932773407,
+          "Y": 5534.3876917027246,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -2216.2939109827212,
+          "Y": 2948.5574525732818,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -3282.280964597634,
+          "Y": 9353.42672856529,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -2324.8913549335166,
+          "Y": 5295.1551561194128,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -1972.1081712824428,
+          "Y": 2833.88229241093,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -2822.910836589158,
+          "Y": 3852.2821150080185,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -2427.418131973488,
+          "Y": 5431.9828919173624,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -2083.532639833491,
+          "Y": 7391.6684470410282,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -1646.601298027485,
+          "Y": 595.86302534917888,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -874.37068459730381,
+          "Y": 5902.952029480336,
+          "Size": 8.359432815741485,
+          "Value": 2.0,
+          "Tag": null
+        },
+        {
+          "X": -2141.7145882582686,
+          "Y": 9409.5338280649121,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -557.55599613359618,
+          "Y": 3770.1100169172046,
+          "Size": 8.359432815741485,
+          "Value": 2.0,
+          "Tag": null
+        },
+        {
+          "X": -2818.8618518071589,
+          "Y": 1407.7877834479184,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -155.22135636137136,
+          "Y": 6430.1055584241531,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -509.75477584587043,
+          "Y": 2476.6592705628427,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -818.44961078379811,
+          "Y": 2487.7524727253522,
+          "Size": 8.359432815741485,
+          "Value": 2.0,
+          "Tag": null
+        },
+        {
+          "X": -451.32957476807769,
+          "Y": 4086.4299725767873,
+          "Size": 8.359432815741485,
+          "Value": 2.0,
+          "Tag": null
+        },
+        {
+          "X": -216.33235051779593,
+          "Y": 8988.8221756706025,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -2633.1487901992032,
+          "Y": 5926.6339447013079,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -232.36918557190256,
+          "Y": 6099.59665040364,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -6.6346975998094422,
+          "Y": 4902.7322485504683,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -688.31606967348534,
+          "Y": 268.38946576114614,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -30.388072110730718,
+          "Y": 2013.0506989816226,
+          "Size": 8.359432815741485,
+          "Value": 2.0,
+          "Tag": null
+        },
+        {
+          "X": -224.78866182912088,
+          "Y": 928.2904152198621,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -1120.3995141839378,
+          "Y": 6283.3414171463983,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -2799.431798278868,
+          "Y": 1002.270071705857,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -163.87501504254215,
+          "Y": 7661.6061901635549,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -358.21956855576491,
+          "Y": 3630.7618124764372,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -1823.0876090163308,
+          "Y": 4925.3692718118373,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -256.35196947213626,
+          "Y": 9027.6745598343241,
+          "Size": 8.359432815741485,
+          "Value": 2.0,
+          "Tag": null
+        },
+        {
+          "X": -3038.3888298418165,
+          "Y": 9320.15001639329,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -373.6934019597179,
+          "Y": 8314.8164953491141,
+          "Size": 8.359432815741485,
+          "Value": 2.0,
+          "Tag": null
+        },
+        {
+          "X": -570.13130335064125,
+          "Y": 7388.7684353929881,
+          "Size": 8.359432815741485,
+          "Value": 2.0,
+          "Tag": null
+        },
+        {
+          "X": -3475.135589922349,
+          "Y": 3397.6889926833564,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -411.26926308741849,
+          "Y": 1346.0155436855134,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -2741.5661498192258,
+          "Y": 8841.46520191933,
+          "Size": 8.359432815741485,
+          "Value": 2.0,
+          "Tag": null
+        },
+        {
+          "X": -1101.7925521513362,
+          "Y": 9579.9312627059553,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -3191.6562151210674,
+          "Y": 3651.0381139286633,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -1469.4658603612372,
+          "Y": 2141.9758652627766,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -873.47960718707282,
+          "Y": 5370.01008974536,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -3476.7111896602873,
+          "Y": 5710.37767523472,
+          "Size": 8.359432815741485,
+          "Value": 2.0,
+          "Tag": null
+        },
+        {
+          "X": -3358.886471721718,
+          "Y": 1512.5850015420176,
+          "Size": 8.359432815741485,
+          "Value": 2.0,
+          "Tag": null
+        },
+        {
+          "X": -179.19445306521357,
+          "Y": 7775.9709316813705,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        }
+      ],
+      "LabelFormatString": null,
+      "LabelMargin": 6.0,
+      "Mapping": null,
+      "BinSize": 0,
+      "ColorAxis": {
+        "InvalidNumberColor": {
+          "A": 255,
+          "B": 128,
+          "G": 128,
+          "R": 128
+        },
+        "HighColor": {
+          "A": 0,
+          "B": 0,
+          "G": 0,
+          "R": 0
+        },
+        "LowColor": {
+          "A": 0,
+          "B": 0,
+          "G": 0,
+          "R": 0
+        },
+        "Palette": {
+          "Colors": [
+            {
+              "A": 255,
+              "B": 138,
+              "G": 196,
+              "R": 0
+            },
+            {
+              "A": 255,
+              "B": 8,
+              "G": 132,
+              "R": 0
+            },
+            {
+              "A": 255,
+              "B": 255,
+              "G": 242,
+              "R": 0
+            }
+          ]
+        },
+        "RenderAsImage": false,
+        "FormatAsFractions": false,
+        "FractionUnit": 1.0,
+        "FractionUnitSymbol": null,
+        "AbsoluteMaximum": 1.7976931348623157E+308,
+        "AbsoluteMinimum": -1.7976931348623157E+308,
+        "ActualMajorStep": 0.5,
+        "ActualMaximum": 2.0,
+        "ActualMinimum": 0.0,
+        "ActualMinorStep": 0.1,
+        "ActualStringFormat": "g6",
+        "ActualTitle": null,
+        "Angle": 0.0,
+        "AxisTickToLabelDistance": 4.0,
+        "AxisTitleDistance": 4.0,
+        "AxisDistance": 20.0,
+        "AxislineColor": {
+          "A": 255,
+          "B": 0,
+          "G": 0,
+          "R": 0
+        },
+        "AxislineStyle": 10,
+        "AxislineThickness": 1.0,
+        "ClipTitle": true,
+        "CropGridlines": false,
+        "DataMaximum": 2.0,
+        "DataMinimum": 0.0,
+        "EndPosition": 1.0,
+        "ExtraGridlineColor": {
+          "A": 255,
+          "B": 0,
+          "G": 0,
+          "R": 0
+        },
+        "ExtraGridlineStyle": 0,
+        "ExtraGridlineThickness": 1.0,
+        "ExtraGridlines": null,
+        "FilterFunction": null,
+        "FilterMaxValue": 1.7976931348623157E+308,
+        "FilterMinValue": -1.7976931348623157E+308,
+        "IntervalLength": 60.0,
+        "IsAxisVisible": true,
+        "IsPanEnabled": false,
+        "IsReversed": false,
+        "IsZoomEnabled": false,
+        "Key": null,
+        "LabelFormatter": null,
+        "Layer": 0,
+        "MajorGridlineColor": {
+          "A": 64,
+          "B": 0,
+          "G": 0,
+          "R": 0
+        },
+        "MajorGridlineStyle": 10,
+        "MajorGridlineThickness": 1.0,
+        "MajorStep": "NaN",
+        "MajorTickSize": 7.0,
+        "Maximum": 2.0,
+        "MaximumPadding": 0.01,
+        "MaximumRange": "Infinity",
+        "Minimum": 0.0,
+        "MinimumMajorStep": 0.0,
+        "MinimumMinorStep": 0.0,
+        "MinimumPadding": 0.01,
+        "MinimumRange": 0.0,
+        "MinorGridlineColor": {
+          "A": 32,
+          "B": 0,
+          "G": 0,
+          "R": 0
+        },
+        "MinorGridlineStyle": 10,
+        "MinorGridlineThickness": 1.0,
+        "MinorStep": "NaN",
+        "MinorTicklineColor": {
+          "A": 0,
+          "B": 1,
+          "G": 0,
+          "R": 0
+        },
+        "MinorTickSize": 4.0,
+        "Offset": 2.6197597603356479,
+        "Position": 0,
+        "PositionAtZeroCrossing": false,
+        "PositionTier": 0,
+        "Scale": -192.00233838829359,
+        "ScreenMax": {
+          "X": 118.99532322341281,
+          "Y": 503.0
+        },
+        "ScreenMin": {
+          "X": 503.0,
+          "Y": 118.99532322341281
+        },
+        "StartPosition": 0.0,
+        "StringFormat": null,
+        "TickStyle": 2,
+        "TicklineColor": {
+          "A": 255,
+          "B": 0,
+          "G": 0,
+          "R": 0
+        },
+        "Title": null,
+        "TitleClippingLength": 0.9,
+        "TitleColor": {
+          "A": 0,
+          "B": 1,
+          "G": 0,
+          "R": 0
+        },
+        "TitleFont": null,
+        "TitleFontSize": "NaN",
+        "TitleFontWeight": 400.0,
+        "TitleFormatString": "{0} [{1}]",
+        "TitlePosition": 0.5,
+        "Unit": null,
+        "UseSuperExponentialFormat": false,
+        "DesiredSize": {
+          "Height": 0.0,
+          "Width": 0.0
+        },
+        "Font": null,
+        "FontSize": "NaN",
+        "FontWeight": 400.0,
+        "Tag": null,
+        "TextColor": {
+          "A": 0,
+          "B": 1,
+          "G": 0,
+          "R": 0
+        },
+        "ToolTip": null,
+        "Selectable": true,
+        "SelectionMode": 0
+      },
+      "ColorAxisKey": null,
+      "DataFieldX": null,
+      "DataFieldY": null,
+      "DataFieldSize": null,
+      "DataFieldTag": null,
+      "DataFieldValue": null,
+      "MarkerFill": {
+        "A": 0,
+        "B": 1,
+        "G": 0,
+        "R": 0
+      },
+      "ActualMarkerFillColor": {
+        "A": 255,
+        "B": 138,
+        "G": 196,
+        "R": 0
+      },
+      "MarkerOutline": null,
+      "MarkerSize": 5.0,
+      "MarkerStroke": {
+        "A": 255,
+        "B": 0,
+        "G": 0,
+        "R": 0
+      },
+      "MarkerStrokeThickness": 1.0,
+      "MarkerType": 3,
+      "MaxValue": 2.0,
+      "MinValue": 0.0,
+      "ActualPoints": [
+        {
+          "X": -1405.6215457252265,
+          "Y": 5910.1514697535868,
+          "Size": 8.359432815741485,
+          "Value": 2.0,
+          "Tag": null
+        },
+        {
+          "X": -793.53816932773407,
+          "Y": 5534.3876917027246,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -2216.2939109827212,
+          "Y": 2948.5574525732818,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -3282.280964597634,
+          "Y": 9353.42672856529,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -2324.8913549335166,
+          "Y": 5295.1551561194128,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -1972.1081712824428,
+          "Y": 2833.88229241093,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -2822.910836589158,
+          "Y": 3852.2821150080185,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -2427.418131973488,
+          "Y": 5431.9828919173624,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -2083.532639833491,
+          "Y": 7391.6684470410282,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -1646.601298027485,
+          "Y": 595.86302534917888,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -874.37068459730381,
+          "Y": 5902.952029480336,
+          "Size": 8.359432815741485,
+          "Value": 2.0,
+          "Tag": null
+        },
+        {
+          "X": -2141.7145882582686,
+          "Y": 9409.5338280649121,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -557.55599613359618,
+          "Y": 3770.1100169172046,
+          "Size": 8.359432815741485,
+          "Value": 2.0,
+          "Tag": null
+        },
+        {
+          "X": -2818.8618518071589,
+          "Y": 1407.7877834479184,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -155.22135636137136,
+          "Y": 6430.1055584241531,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -509.75477584587043,
+          "Y": 2476.6592705628427,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -818.44961078379811,
+          "Y": 2487.7524727253522,
+          "Size": 8.359432815741485,
+          "Value": 2.0,
+          "Tag": null
+        },
+        {
+          "X": -451.32957476807769,
+          "Y": 4086.4299725767873,
+          "Size": 8.359432815741485,
+          "Value": 2.0,
+          "Tag": null
+        },
+        {
+          "X": -216.33235051779593,
+          "Y": 8988.8221756706025,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -2633.1487901992032,
+          "Y": 5926.6339447013079,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -232.36918557190256,
+          "Y": 6099.59665040364,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -6.6346975998094422,
+          "Y": 4902.7322485504683,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -688.31606967348534,
+          "Y": 268.38946576114614,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -30.388072110730718,
+          "Y": 2013.0506989816226,
+          "Size": 8.359432815741485,
+          "Value": 2.0,
+          "Tag": null
+        },
+        {
+          "X": -224.78866182912088,
+          "Y": 928.2904152198621,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -1120.3995141839378,
+          "Y": 6283.3414171463983,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -2799.431798278868,
+          "Y": 1002.270071705857,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -163.87501504254215,
+          "Y": 7661.6061901635549,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -358.21956855576491,
+          "Y": 3630.7618124764372,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -1823.0876090163308,
+          "Y": 4925.3692718118373,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -256.35196947213626,
+          "Y": 9027.6745598343241,
+          "Size": 8.359432815741485,
+          "Value": 2.0,
+          "Tag": null
+        },
+        {
+          "X": -3038.3888298418165,
+          "Y": 9320.15001639329,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -373.6934019597179,
+          "Y": 8314.8164953491141,
+          "Size": 8.359432815741485,
+          "Value": 2.0,
+          "Tag": null
+        },
+        {
+          "X": -570.13130335064125,
+          "Y": 7388.7684353929881,
+          "Size": 8.359432815741485,
+          "Value": 2.0,
+          "Tag": null
+        },
+        {
+          "X": -3475.135589922349,
+          "Y": 3397.6889926833564,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -411.26926308741849,
+          "Y": 1346.0155436855134,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -2741.5661498192258,
+          "Y": 8841.46520191933,
+          "Size": 8.359432815741485,
+          "Value": 2.0,
+          "Tag": null
+        },
+        {
+          "X": -1101.7925521513362,
+          "Y": 9579.9312627059553,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -3191.6562151210674,
+          "Y": 3651.0381139286633,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -1469.4658603612372,
+          "Y": 2141.9758652627766,
+          "Size": 8.359432815741485,
+          "Value": 1.0,
+          "Tag": null
+        },
+        {
+          "X": -873.47960718707282,
+          "Y": 5370.01008974536,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        },
+        {
+          "X": -3476.7111896602873,
+          "Y": 5710.37767523472,
+          "Size": 8.359432815741485,
+          "Value": 2.0,
+          "Tag": null
+        },
+        {
+          "X": -3358.886471721718,
+          "Y": 1512.5850015420176,
+          "Size": 8.359432815741485,
+          "Value": 2.0,
+          "Tag": null
+        },
+        {
+          "X": -179.19445306521357,
+          "Y": 7775.9709316813705,
+          "Size": 8.359432815741485,
+          "Value": 0.0,
+          "Tag": null
+        }
+      ],
+      "MaxX": -6.6346975998094422,
+      "MaxY": 9579.9312627059553,
+      "MinX": -3476.7111896602873,
+      "MinY": 268.38946576114614,
+      "XAxis": {
+        "FormatAsFractions": false,
+        "FractionUnit": 1.0,
+        "FractionUnitSymbol": null,
+        "AbsoluteMaximum": 1.7976931348623157E+308,
+        "AbsoluteMinimum": -1.7976931348623157E+308,
+        "ActualMajorStep": 500.0,
+        "ActualMaximum": 28.066067320795341,
+        "ActualMinimum": -3511.7589622300979,
+        "ActualMinorStep": 100.0,
+        "ActualStringFormat": "g6",
+        "ActualTitle": "Ir2lWRD",
+        "Angle": 0.0,
+        "AxisTickToLabelDistance": 4.0,
+        "AxisTitleDistance": 4.0,
+        "AxisDistance": 0.0,
+        "AxislineColor": {
+          "A": 255,
+          "B": 0,
+          "G": 0,
+          "R": 0
+        },
+        "AxislineStyle": 0,
+        "AxislineThickness": 1.0,
+        "ClipTitle": true,
+        "CropGridlines": false,
+        "DataMaximum": -6.6346975998094422,
+        "DataMinimum": -3476.7111896602873,
+        "EndPosition": 1.0,
+        "ExtraGridlineColor": {
+          "A": 255,
+          "B": 0,
+          "G": 0,
+          "R": 0
+        },
+        "ExtraGridlineStyle": 0,
+        "ExtraGridlineThickness": 1.0,
+        "ExtraGridlines": null,
+        "FilterFunction": null,
+        "FilterMaxValue": 1.7976931348623157E+308,
+        "FilterMinValue": -1.7976931348623157E+308,
+        "IntervalLength": 60.0,
+        "IsAxisVisible": true,
+        "IsPanEnabled": true,
+        "IsReversed": false,
+        "IsZoomEnabled": true,
+        "Key": null,
+        "LabelFormatter": null,
+        "Layer": 0,
+        "MajorGridlineColor": {
+          "A": 64,
+          "B": 0,
+          "G": 0,
+          "R": 0
+        },
+        "MajorGridlineStyle": 5,
+        "MajorGridlineThickness": 1.0,
+        "MajorStep": "NaN",
+        "MajorTickSize": 3.6716360019853509,
+        "Maximum": "NaN",
+        "MaximumPadding": 0.01,
+        "MaximumRange": "Infinity",
+        "Minimum": "NaN",
+        "MinimumMajorStep": 0.0,
+        "MinimumMinorStep": 0.0,
+        "MinimumPadding": 0.01,
+        "MinimumRange": 0.0,
+        "MinorGridlineColor": {
+          "A": 32,
+          "B": 0,
+          "G": 0,
+          "R": 0
+        },
+        "MinorGridlineStyle": 10,
+        "MinorGridlineThickness": 1.0,
+        "MinorStep": "NaN",
+        "MinorTicklineColor": {
+          "A": 0,
+          "B": 1,
+          "G": 0,
+          "R": 0
+        },
+        "MinorTickSize": 0.0,
+        "Offset": -3546.6895532690696,
+        "Position": 3,
+        "PositionAtZeroCrossing": false,
+        "PositionTier": 0,
+        "Scale": 0.22902561227992069,
+        "ScreenMax": {
+          "X": 818.71059475668164,
+          "Y": 8.0
+        },
+        "ScreenMin": {
+          "X": 8.0,
+          "Y": 818.71059475668164
+        },
+        "StartPosition": 0.0,
+        "StringFormat": null,
+        "TickStyle": 0,
+        "TicklineColor": {
+          "A": 255,
+          "B": 0,
+          "G": 0,
+          "R": 0
+        },
+        "Title": "Ir2lWRD",
+        "TitleClippingLength": 0.9,
+        "TitleColor": {
+          "A": 0,
+          "B": 1,
+          "G": 0,
+          "R": 0
+        },
+        "TitleFont": "Times",
+        "TitleFontSize": 13.0,
+        "TitleFontWeight": 400.0,
+        "TitleFormatString": "{0} [{1}]",
+        "TitlePosition": 0.5,
+        "Unit": null,
+        "UseSuperExponentialFormat": false,
+        "DesiredSize": {
+          "Height": 66.789268535912839,
+          "Width": 0.0
+        },
+        "Font": "Times",
+        "FontSize": 11.0,
+        "FontWeight": 400.0,
+        "Tag": null,
+        "TextColor": {
+          "A": 0,
+          "B": 1,
+          "G": 0,
+          "R": 0
+        },
+        "ToolTip": null,
+        "Selectable": true,
+        "SelectionMode": 0
+      },
+      "XAxisKey": null,
+      "YAxis": {
+        "FormatAsFractions": false,
+        "FractionUnit": 1.0,
+        "FractionUnitSymbol": null,
+        "AbsoluteMaximum": 1.7976931348623157E+308,
+        "AbsoluteMinimum": -1.7976931348623157E+308,
+        "ActualMajorStep": 2000.0,
+        "ActualMaximum": 9673.046680675403,
+        "ActualMinimum": 174.34289361200356,
+        "ActualMinorStep": 500.0,
+        "ActualStringFormat": "g6",
+        "ActualTitle": "yECZO1",
+        "Angle": 0.0,
+        "AxisTickToLabelDistance": 4.0,
+        "AxisTitleDistance": 4.0,
+        "AxisDistance": 0.0,
+        "AxislineColor": {
+          "A": 255,
+          "B": 0,
+          "G": 0,
+          "R": 0
+        },
+        "AxislineStyle": 0,
+        "AxislineThickness": 1.0,
+        "ClipTitle": true,
+        "CropGridlines": false,
+        "DataMaximum": 9579.9312627059553,
+        "DataMinimum": 268.38946576114614,
+        "EndPosition": 1.0,
+        "ExtraGridlineColor": {
+          "A": 255,
+          "B": 0,
+          "G": 0,
+          "R": 0
+        },
+        "ExtraGridlineStyle": 0,
+        "ExtraGridlineThickness": 1.0,
+        "ExtraGridlines": null,
+        "FilterFunction": null,
+        "FilterMaxValue": 1.7976931348623157E+308,
+        "FilterMinValue": -1.7976931348623157E+308,
+        "IntervalLength": 60.0,
+        "IsAxisVisible": true,
+        "IsPanEnabled": true,
+        "IsReversed": false,
+        "IsZoomEnabled": true,
+        "Key": null,
+        "LabelFormatter": null,
+        "Layer": 0,
+        "MajorGridlineColor": {
+          "A": 64,
+          "B": 0,
+          "G": 0,
+          "R": 0
+        },
+        "MajorGridlineStyle": 5,
+        "MajorGridlineThickness": 1.0,
+        "MajorStep": "NaN",
+        "MajorTickSize": 3.6716360019853509,
+        "Maximum": "NaN",
+        "MaximumPadding": 0.01,
+        "MaximumRange": "Infinity",
+        "Minimum": "NaN",
+        "MinimumMajorStep": 0.0,
+        "MinimumMinorStep": 0.0,
+        "MinimumPadding": 0.01,
+        "MinimumRange": 0.0,
+        "MinorGridlineColor": {
+          "A": 32,
+          "B": 0,
+          "G": 0,
+          "R": 0
+        },
+        "MinorGridlineStyle": 10,
+        "MinorGridlineThickness": 1.0,
+        "MinorStep": "NaN",
+        "MinorTicklineColor": {
+          "A": 0,
+          "B": 1,
+          "G": 0,
+          "R": 0
+        },
+        "MinorTickSize": 0.0,
+        "Offset": 12616.503871960263,
+        "Position": 2,
+        "PositionAtZeroCrossing": false,
+        "PositionTier": 0,
+        "Scale": -0.040427060932205924,
+        "ScreenMax": {
+          "X": 118.99532322341281,
+          "Y": 503.0
+        },
+        "ScreenMin": {
+          "X": 503.0,
+          "Y": 118.99532322341281
+        },
+        "StartPosition": 0.0,
+        "StringFormat": null,
+        "TickStyle": 2,
+        "TicklineColor": {
+          "A": 255,
+          "B": 0,
+          "G": 0,
+          "R": 0
+        },
+        "Title": "yECZO1",
+        "TitleClippingLength": 0.9,
+        "TitleColor": {
+          "A": 0,
+          "B": 1,
+          "G": 0,
+          "R": 0
+        },
+        "TitleFont": "Times",
+        "TitleFontSize": 13.0,
+        "TitleFontWeight": 400.0,
+        "TitleFormatString": "{0} [{1}]",
+        "TitlePosition": 0.5,
+        "Unit": null,
+        "UseSuperExponentialFormat": false,
+        "DesiredSize": {
+          "Height": 0.0,
+          "Width": 90.289405243318356
+        },
+        "Font": "Times",
+        "FontSize": 11.0,
+        "FontWeight": 400.0,
+        "Tag": null,
+        "TextColor": {
+          "A": 0,
+          "B": 1,
+          "G": 0,
+          "R": 0
+        },
+        "ToolTip": null,
+        "Selectable": true,
+        "SelectionMode": 0
+      },
+      "YAxisKey": null,
+      "ItemsSource": null,
+      "Background": {
+        "A": 0,
+        "B": 0,
+        "G": 0,
+        "R": 0
+      },
+      "IsVisible": true,
+      "Title": null,
+      "RenderInLegend": true,
+      "TrackerFormatString": "{0}\n{1}: {2}\n{3}: {4}",
+      "TrackerKey": null,
+      "Font": null,
+      "FontSize": "NaN",
+      "FontWeight": 400.0,
+      "Tag": null,
+      "TextColor": {
+        "A": 0,
+        "B": 1,
+        "G": 0,
+        "R": 0
+      },
+      "ToolTip": null,
+      "Selectable": true,
+      "SelectionMode": 0
+    }
+  ],
+  "RenderingDecorator": null,
+  "Subtitle": null,
+  "SubtitleFont": null,
+  "SubtitleFontSize": 14.0,
+  "SubtitleFontWeight": 400.0,
+  "TextColor": {
+    "A": 255,
+    "B": 0,
+    "G": 0,
+    "R": 0
+  },
+  "Title": "L2kYB X6jJPn3GgA",
+  "TitleToolTip": null,
+  "TitleColor": {
+    "A": 0,
+    "B": 1,
+    "G": 0,
+    "R": 0
+  },
+  "SubtitleColor": {
+    "A": 0,
+    "B": 1,
+    "G": 0,
+    "R": 0
+  },
+  "TitleHorizontalAlignment": 0,
+  "TitleArea": {
+    "Bottom": 58.2060546875,
+    "Height": 50.2060546875,
+    "Left": 8.0,
+    "Right": 818.71059475668164,
+    "Top": 8.0,
+    "Width": 810.71059475668164,
+    "Center": {
+      "X": 413.35529737834082,
+      "Y": 33.10302734375
+    }
+  },
+  "TitleFont": "Times",
+  "TitleFontSize": 15.0,
+  "TitleFontWeight": 700.0,
+  "TitlePadding": 6.0,
+  "DefaultAngleAxis": null,
+  "DefaultMagnitudeAxis": null,
+  "DefaultXAxis": {
+    "FormatAsFractions": false,
+    "FractionUnit": 1.0,
+    "FractionUnitSymbol": null,
+    "AbsoluteMaximum": 1.7976931348623157E+308,
+    "AbsoluteMinimum": -1.7976931348623157E+308,
+    "ActualMajorStep": 500.0,
+    "ActualMaximum": 28.066067320795341,
+    "ActualMinimum": -3511.7589622300979,
+    "ActualMinorStep": 100.0,
+    "ActualStringFormat": "g6",
+    "ActualTitle": "Ir2lWRD",
+    "Angle": 0.0,
+    "AxisTickToLabelDistance": 4.0,
+    "AxisTitleDistance": 4.0,
+    "AxisDistance": 0.0,
+    "AxislineColor": {
+      "A": 255,
+      "B": 0,
+      "G": 0,
+      "R": 0
+    },
+    "AxislineStyle": 0,
+    "AxislineThickness": 1.0,
+    "ClipTitle": true,
+    "CropGridlines": false,
+    "DataMaximum": -6.6346975998094422,
+    "DataMinimum": -3476.7111896602873,
+    "EndPosition": 1.0,
+    "ExtraGridlineColor": {
+      "A": 255,
+      "B": 0,
+      "G": 0,
+      "R": 0
+    },
+    "ExtraGridlineStyle": 0,
+    "ExtraGridlineThickness": 1.0,
+    "ExtraGridlines": null,
+    "FilterFunction": null,
+    "FilterMaxValue": 1.7976931348623157E+308,
+    "FilterMinValue": -1.7976931348623157E+308,
+    "IntervalLength": 60.0,
+    "IsAxisVisible": true,
+    "IsPanEnabled": true,
+    "IsReversed": false,
+    "IsZoomEnabled": true,
+    "Key": null,
+    "LabelFormatter": null,
+    "Layer": 0,
+    "MajorGridlineColor": {
+      "A": 64,
+      "B": 0,
+      "G": 0,
+      "R": 0
+    },
+    "MajorGridlineStyle": 5,
+    "MajorGridlineThickness": 1.0,
+    "MajorStep": "NaN",
+    "MajorTickSize": 3.6716360019853509,
+    "Maximum": "NaN",
+    "MaximumPadding": 0.01,
+    "MaximumRange": "Infinity",
+    "Minimum": "NaN",
+    "MinimumMajorStep": 0.0,
+    "MinimumMinorStep": 0.0,
+    "MinimumPadding": 0.01,
+    "MinimumRange": 0.0,
+    "MinorGridlineColor": {
+      "A": 32,
+      "B": 0,
+      "G": 0,
+      "R": 0
+    },
+    "MinorGridlineStyle": 10,
+    "MinorGridlineThickness": 1.0,
+    "MinorStep": "NaN",
+    "MinorTicklineColor": {
+      "A": 0,
+      "B": 1,
+      "G": 0,
+      "R": 0
+    },
+    "MinorTickSize": 0.0,
+    "Offset": -3546.6895532690696,
+    "Position": 3,
+    "PositionAtZeroCrossing": false,
+    "PositionTier": 0,
+    "Scale": 0.22902561227992069,
+    "ScreenMax": {
+      "X": 818.71059475668164,
+      "Y": 8.0
+    },
+    "ScreenMin": {
+      "X": 8.0,
+      "Y": 818.71059475668164
+    },
+    "StartPosition": 0.0,
+    "StringFormat": null,
+    "TickStyle": 0,
+    "TicklineColor": {
+      "A": 255,
+      "B": 0,
+      "G": 0,
+      "R": 0
+    },
+    "Title": "Ir2lWRD",
+    "TitleClippingLength": 0.9,
+    "TitleColor": {
+      "A": 0,
+      "B": 1,
+      "G": 0,
+      "R": 0
+    },
+    "TitleFont": "Times",
+    "TitleFontSize": 13.0,
+    "TitleFontWeight": 400.0,
+    "TitleFormatString": "{0} [{1}]",
+    "TitlePosition": 0.5,
+    "Unit": null,
+    "UseSuperExponentialFormat": false,
+    "DesiredSize": {
+      "Height": 66.789268535912839,
+      "Width": 0.0
+    },
+    "Font": "Times",
+    "FontSize": 11.0,
+    "FontWeight": 400.0,
+    "Tag": null,
+    "TextColor": {
+      "A": 0,
+      "B": 1,
+      "G": 0,
+      "R": 0
+    },
+    "ToolTip": null,
+    "Selectable": true,
+    "SelectionMode": 0
+  },
+  "DefaultYAxis": {
+    "FormatAsFractions": false,
+    "FractionUnit": 1.0,
+    "FractionUnitSymbol": null,
+    "AbsoluteMaximum": 1.7976931348623157E+308,
+    "AbsoluteMinimum": -1.7976931348623157E+308,
+    "ActualMajorStep": 2000.0,
+    "ActualMaximum": 9673.046680675403,
+    "ActualMinimum": 174.34289361200356,
+    "ActualMinorStep": 500.0,
+    "ActualStringFormat": "g6",
+    "ActualTitle": "yECZO1",
+    "Angle": 0.0,
+    "AxisTickToLabelDistance": 4.0,
+    "AxisTitleDistance": 4.0,
+    "AxisDistance": 0.0,
+    "AxislineColor": {
+      "A": 255,
+      "B": 0,
+      "G": 0,
+      "R": 0
+    },
+    "AxislineStyle": 0,
+    "AxislineThickness": 1.0,
+    "ClipTitle": true,
+    "CropGridlines": false,
+    "DataMaximum": 9579.9312627059553,
+    "DataMinimum": 268.38946576114614,
+    "EndPosition": 1.0,
+    "ExtraGridlineColor": {
+      "A": 255,
+      "B": 0,
+      "G": 0,
+      "R": 0
+    },
+    "ExtraGridlineStyle": 0,
+    "ExtraGridlineThickness": 1.0,
+    "ExtraGridlines": null,
+    "FilterFunction": null,
+    "FilterMaxValue": 1.7976931348623157E+308,
+    "FilterMinValue": -1.7976931348623157E+308,
+    "IntervalLength": 60.0,
+    "IsAxisVisible": true,
+    "IsPanEnabled": true,
+    "IsReversed": false,
+    "IsZoomEnabled": true,
+    "Key": null,
+    "LabelFormatter": null,
+    "Layer": 0,
+    "MajorGridlineColor": {
+      "A": 64,
+      "B": 0,
+      "G": 0,
+      "R": 0
+    },
+    "MajorGridlineStyle": 5,
+    "MajorGridlineThickness": 1.0,
+    "MajorStep": "NaN",
+    "MajorTickSize": 3.6716360019853509,
+    "Maximum": "NaN",
+    "MaximumPadding": 0.01,
+    "MaximumRange": "Infinity",
+    "Minimum": "NaN",
+    "MinimumMajorStep": 0.0,
+    "MinimumMinorStep": 0.0,
+    "MinimumPadding": 0.01,
+    "MinimumRange": 0.0,
+    "MinorGridlineColor": {
+      "A": 32,
+      "B": 0,
+      "G": 0,
+      "R": 0
+    },
+    "MinorGridlineStyle": 10,
+    "MinorGridlineThickness": 1.0,
+    "MinorStep": "NaN",
+    "MinorTicklineColor": {
+      "A": 0,
+      "B": 1,
+      "G": 0,
+      "R": 0
+    },
+    "MinorTickSize": 0.0,
+    "Offset": 12616.503871960263,
+    "Position": 2,
+    "PositionAtZeroCrossing": false,
+    "PositionTier": 0,
+    "Scale": -0.040427060932205924,
+    "ScreenMax": {
+      "X": 118.99532322341281,
+      "Y": 503.0
+    },
+    "ScreenMin": {
+      "X": 503.0,
+      "Y": 118.99532322341281
+    },
+    "StartPosition": 0.0,
+    "StringFormat": null,
+    "TickStyle": 2,
+    "TicklineColor": {
+      "A": 255,
+      "B": 0,
+      "G": 0,
+      "R": 0
+    },
+    "Title": "yECZO1",
+    "TitleClippingLength": 0.9,
+    "TitleColor": {
+      "A": 0,
+      "B": 1,
+      "G": 0,
+      "R": 0
+    },
+    "TitleFont": "Times",
+    "TitleFontSize": 13.0,
+    "TitleFontWeight": 400.0,
+    "TitleFormatString": "{0} [{1}]",
+    "TitlePosition": 0.5,
+    "Unit": null,
+    "UseSuperExponentialFormat": false,
+    "DesiredSize": {
+      "Height": 0.0,
+      "Width": 90.289405243318356
+    },
+    "Font": "Times",
+    "FontSize": 11.0,
+    "FontWeight": 400.0,
+    "Tag": null,
+    "TextColor": {
+      "A": 0,
+      "B": 1,
+      "G": 0,
+      "R": 0
+    },
+    "ToolTip": null,
+    "Selectable": true,
+    "SelectionMode": 0
+  },
+  "DefaultColorAxis": {
+    "InvalidNumberColor": {
+      "A": 255,
+      "B": 128,
+      "G": 128,
+      "R": 128
+    },
+    "HighColor": {
+      "A": 0,
+      "B": 0,
+      "G": 0,
+      "R": 0
+    },
+    "LowColor": {
+      "A": 0,
+      "B": 0,
+      "G": 0,
+      "R": 0
+    },
+    "Palette": {
+      "Colors": [
+        {
+          "A": 255,
+          "B": 138,
+          "G": 196,
+          "R": 0
+        },
+        {
+          "A": 255,
+          "B": 8,
+          "G": 132,
+          "R": 0
+        },
+        {
+          "A": 255,
+          "B": 255,
+          "G": 242,
+          "R": 0
+        }
+      ]
+    },
+    "RenderAsImage": false,
+    "FormatAsFractions": false,
+    "FractionUnit": 1.0,
+    "FractionUnitSymbol": null,
+    "AbsoluteMaximum": 1.7976931348623157E+308,
+    "AbsoluteMinimum": -1.7976931348623157E+308,
+    "ActualMajorStep": 0.5,
+    "ActualMaximum": 2.0,
+    "ActualMinimum": 0.0,
+    "ActualMinorStep": 0.1,
+    "ActualStringFormat": "g6",
+    "ActualTitle": null,
+    "Angle": 0.0,
+    "AxisTickToLabelDistance": 4.0,
+    "AxisTitleDistance": 4.0,
+    "AxisDistance": 20.0,
+    "AxislineColor": {
+      "A": 255,
+      "B": 0,
+      "G": 0,
+      "R": 0
+    },
+    "AxislineStyle": 10,
+    "AxislineThickness": 1.0,
+    "ClipTitle": true,
+    "CropGridlines": false,
+    "DataMaximum": 2.0,
+    "DataMinimum": 0.0,
+    "EndPosition": 1.0,
+    "ExtraGridlineColor": {
+      "A": 255,
+      "B": 0,
+      "G": 0,
+      "R": 0
+    },
+    "ExtraGridlineStyle": 0,
+    "ExtraGridlineThickness": 1.0,
+    "ExtraGridlines": null,
+    "FilterFunction": null,
+    "FilterMaxValue": 1.7976931348623157E+308,
+    "FilterMinValue": -1.7976931348623157E+308,
+    "IntervalLength": 60.0,
+    "IsAxisVisible": true,
+    "IsPanEnabled": false,
+    "IsReversed": false,
+    "IsZoomEnabled": false,
+    "Key": null,
+    "LabelFormatter": null,
+    "Layer": 0,
+    "MajorGridlineColor": {
+      "A": 64,
+      "B": 0,
+      "G": 0,
+      "R": 0
+    },
+    "MajorGridlineStyle": 10,
+    "MajorGridlineThickness": 1.0,
+    "MajorStep": "NaN",
+    "MajorTickSize": 7.0,
+    "Maximum": 2.0,
+    "MaximumPadding": 0.01,
+    "MaximumRange": "Infinity",
+    "Minimum": 0.0,
+    "MinimumMajorStep": 0.0,
+    "MinimumMinorStep": 0.0,
+    "MinimumPadding": 0.01,
+    "MinimumRange": 0.0,
+    "MinorGridlineColor": {
+      "A": 32,
+      "B": 0,
+      "G": 0,
+      "R": 0
+    },
+    "MinorGridlineStyle": 10,
+    "MinorGridlineThickness": 1.0,
+    "MinorStep": "NaN",
+    "MinorTicklineColor": {
+      "A": 0,
+      "B": 1,
+      "G": 0,
+      "R": 0
+    },
+    "MinorTickSize": 4.0,
+    "Offset": 2.6197597603356479,
+    "Position": 0,
+    "PositionAtZeroCrossing": false,
+    "PositionTier": 0,
+    "Scale": -192.00233838829359,
+    "ScreenMax": {
+      "X": 118.99532322341281,
+      "Y": 503.0
+    },
+    "ScreenMin": {
+      "X": 503.0,
+      "Y": 118.99532322341281
+    },
+    "StartPosition": 0.0,
+    "StringFormat": null,
+    "TickStyle": 2,
+    "TicklineColor": {
+      "A": 255,
+      "B": 0,
+      "G": 0,
+      "R": 0
+    },
+    "Title": null,
+    "TitleClippingLength": 0.9,
+    "TitleColor": {
+      "A": 0,
+      "B": 1,
+      "G": 0,
+      "R": 0
+    },
+    "TitleFont": null,
+    "TitleFontSize": "NaN",
+    "TitleFontWeight": 400.0,
+    "TitleFormatString": "{0} [{1}]",
+    "TitlePosition": 0.5,
+    "Unit": null,
+    "UseSuperExponentialFormat": false,
+    "DesiredSize": {
+      "Height": 0.0,
+      "Width": 0.0
+    },
+    "Font": null,
+    "FontSize": "NaN",
+    "FontWeight": 400.0,
+    "Tag": null,
+    "TextColor": {
+      "A": 0,
+      "B": 1,
+      "G": 0,
+      "R": 0
+    },
+    "ToolTip": null,
+    "Selectable": true,
+    "SelectionMode": 0
+  },
+  "SyncRoot": {},
+  "SelectionColor": {
+    "A": 255,
+    "B": 0,
+    "G": 255,
+    "R": 255
+  }
+}

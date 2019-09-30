@@ -106,9 +106,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Examples\plot_15_gt.json" />
+    <None Include="Examples\plot_15_gtt.json" />
+    <None Include="Examples\plot_15_model.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Examples\plot_15.png" />
+    <Content Include="Examples\plot_15.xml" />
     <Content Include="generate_random_scatter_old.py" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
