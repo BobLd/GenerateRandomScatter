@@ -6,8 +6,8 @@ Tool to generate random scatter plots with their ground truth in C# using [OxyPl
 - Available classes are _point_, _tick_ and _label_.
 - [OxyPlot](https://github.com/oxyplot/oxyplot) models are saved in json. Example for the scatter plot below [__here__](GenerateRandomScatter/Examples/plot_15_model.json).
 
-## Scatter plot generated
-![plot example](GenerateRandomScatter/Examples/plot_15.png)
-
 ## Scatter plot with the bounding boxes
 ![plot example bbox](GenerateRandomScatter/Examples/plot_15_bbox.png)
+
+## Scatter plot generated
+![plot example](GenerateRandomScatter/Examples/plot_15.png)
