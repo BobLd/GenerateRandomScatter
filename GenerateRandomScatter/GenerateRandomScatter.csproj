@@ -114,7 +114,6 @@
   <ItemGroup>
     <Content Include="Examples\plot_15.png" />
     <Content Include="Examples\plot_15.xml" />
-    <Content Include="generate_random_scatter_old.py" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Accord.3.8.0\build\Accord.targets" Condition="Exists('..\packages\Accord.3.8.0\build\Accord.targets')" />
