@@ -4,12 +4,14 @@ using Accord.Imaging.Filters;
 using Accord.Imaging.Textures;
 using Accord.Math;
 using Accord.Statistics.Distributions.Univariate;
+using GenerateRandomScatter.Coco;
 using GenerateRandomScatter.PascalVOC;
-using Newtonsoft.Json;
+//using Newtonsoft.Json;
 using OxyPlot;
 using OxyPlot.Axes;
 using OxyPlot.Series;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -314,11 +316,81 @@ namespace GenerateRandomScatter
 
             CheckFolders();
 
+            var data = new ConcurrentDictionary<int, (IEnumerable<RectangleF> points, IEnumerable<RectangleF> ticks, IEnumerable<RectangleF> labels)>();
+
             //for (int i = 0; i < plotsCount; i++)
-            System.Threading.Tasks.Parallel.For(0, plotsCount, i =>
+            System.Threading.Tasks.Parallel.For(1, plotsCount + 1, i =>
             {
-                GetRandomPlot("plot_" + i);
+                var plotBoxes = GetRandomPlot(i);
+                data.TryAdd(i, plotBoxes);
             });
+
+            CocoFile cocoFile = new CocoFile()
+            {
+                 categories = new CocoCategory[]
+                 {
+                     new CocoCategory() { id = 1, name = "points" },
+                     new CocoCategory() { id = 2, name = "ticks" },
+                     new CocoCategory() { id = 3, name = "labels" }
+                 },
+                info = new CocoInfo() { contributor = "todo" }
+            };
+
+            CocoImage[] cocoImages = new CocoImage[data.Count];
+
+            List<CocoAnnotation> annotations = new List<CocoAnnotation>();
+
+            for (int d = 0; d < data.Count; d++)
+            {
+                var kvp = data.ElementAt(d);
+                //$"plot_{id}.png"
+                cocoImages[d] = new CocoImage()
+                {
+                    id = kvp.Key,
+                    file_name = $"plot_{kvp.Key}.png",
+                    width = 600,
+                    height = 400
+                };
+
+                foreach (var point in kvp.Value.points)
+                {
+                    CocoAnnotation cocoAnnotation = new CocoAnnotation()
+                    {
+                        bbox = new float[] { point.Left, point.Top, point.Width, point.Height },
+                        category_id = 1,
+                        image_id = kvp.Key,
+                        segmentation = new float[][] { new float[] { point.Left, point.Top, point.Width, point.Height } }
+                    };
+                    annotations.Add(cocoAnnotation);
+                }
+
+                foreach (var tick in kvp.Value.ticks)
+                {
+                    CocoAnnotation cocoAnnotation = new CocoAnnotation()
+                    {
+                        bbox = new float[] { tick.Left, tick.Top, tick.Width, tick.Height },
+                        category_id = 2,
+                        image_id = kvp.Key,
+                        segmentation = new float[][] { new float[] { tick.Left, tick.Top, tick.Width, tick.Height } }
+                    };
+                    annotations.Add(cocoAnnotation);
+                }
+
+                foreach (var label in kvp.Value.labels)
+                {
+                    CocoAnnotation cocoAnnotation = new CocoAnnotation()
+                    {
+                        bbox = new float[] { label.Left, label.Top, label.Width, label.Height },
+                        category_id = 3,
+                        image_id = kvp.Key,
+                        segmentation = new float[][] { new float[] { label.Left, label.Top, label.Width, label.Height } }
+                    };
+                    annotations.Add(cocoAnnotation);
+                }
+            }
+
+            cocoFile.images = cocoImages;
+            cocoFile.annotations = annotations.ToArray();
 
             Console.WriteLine("Done. Press any key.");
             Console.ReadKey();
@@ -537,7 +609,7 @@ namespace GenerateRandomScatter
         /// </summary>
         /// <param name="name"></param>
         /// <param name="directory"></param>
-        private static void GetRandomPlot(string name)
+        private static (IEnumerable<RectangleF> points, IEnumerable<RectangleF> ticks, IEnumerable<RectangleF> labels) GetRandomPlot(int id)
         {
             // RESOLUTION AND TICK SIZE
             int dpi = (int)(dpi_min + _random.NextDouble() * (dpi_max - dpi_min));
@@ -628,8 +700,6 @@ namespace GenerateRandomScatter
 
             var markers_empty = _random.NextDouble() > 0.75;
             var markers_empty_ratio = new[] { 0.0, 0.5, 0.7 }[_random.Next(3)];
-
-
 
             // PAD BETWEEN TICKS AND LABELS
             double pad_x = Math.Max(tick_size[1] + 0.5, (int)(pad_min + _random.NextDouble() * (pad_max - pad_min)));
@@ -746,9 +816,9 @@ namespace GenerateRandomScatter
             // ##### End plot generation 
 
             model.InvalidatePlot(true);
-                        
+
             // export as PDF
-            using (var stream = File.Create(Path.Combine(RootFoler, ImageFolder, name + ".pdf")))
+            using (var stream = File.Create(Path.Combine(RootFoler, ImageFolder, $"plot_{id}.pdf")))
             {
                 PdfExporter.Export(model, stream, 600, 400);
             }
@@ -761,8 +831,8 @@ namespace GenerateRandomScatter
                 Resolution = dpi
             };
 
-            string imageFileName = name + ".png";
-            string stimulusFileName = name + "_stimulus.png";
+            string imageFileName = $"plot_{id}.png";
+            string stimulusFileName = $"plot_{id}_stimulus.png";
 
             using (Bitmap plotBitmap = pngExporter.ExportToBitmap(model))
             {
@@ -778,9 +848,9 @@ namespace GenerateRandomScatter
             var groundTruthText = pngExporter.GroundTruthText;
 
             // Save Jsons
-            File.WriteAllText(Path.Combine(RootFoler, PlotsFolder, name + "_model.json"), JsonConvert.SerializeObject(model, Formatting.Indented, new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
-            File.WriteAllText(Path.Combine(RootFoler, PlotsFolder, name + "_gt.json"), JsonConvert.SerializeObject(groundTruth, Formatting.Indented));
-            File.WriteAllText(Path.Combine(RootFoler, PlotsFolder, name + "_gtt.json"), JsonConvert.SerializeObject(groundTruthText, Formatting.Indented));
+            //File.WriteAllText(Path.Combine(RootFoler, PlotsFolder, name + "_model.json"), JsonConvert.SerializeObject(model, Formatting.Indented, new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
+            //File.WriteAllText(Path.Combine(RootFoler, PlotsFolder, name + "_gt.json"), JsonConvert.SerializeObject(groundTruth, Formatting.Indented));
+            //File.WriteAllText(Path.Combine(RootFoler, PlotsFolder, name + "_gtt.json"), JsonConvert.SerializeObject(groundTruthText, Formatting.Indented));
 
 
             var boxesPoints = get_data_pixel(xAxis, yAxis, dpi, model.Series, groundTruth);
@@ -793,7 +863,9 @@ namespace GenerateRandomScatter
             var boxesLabels = boxesLabelsTuple.Item1.ToList();
             boxesLabels.AddRange(boxesLabelsTuple.Item2);
 
+            return (boxesPoints, boxesTicks, boxesLabels);
 
+            /*
             PascalVocAnnotation annotationImage = new PascalVocAnnotation()
             {
                 Folder = "ScatterPlot",
@@ -899,13 +971,15 @@ namespace GenerateRandomScatter
                 return false;
             });
             if (removed > 0) Console.WriteLine(removed.ToString() + " bounding boxes were removed.");
+            */
 
+            /*
             annotationImage.Objects = objects.ToArray();
             File.WriteAllText(Path.Combine(RootFoler, AnnotationsFolder, name + ".xml"), _vocSerializer.Serialize(annotationImage));
 
             annotationStimulus.Objects = objects.ToArray();
             File.WriteAllText(Path.Combine(RootFoler, AnnotationsFolder, name + "_stimulus.xml"), _vocSerializer.Serialize(annotationStimulus));
-
+            */
 
             // *******************************************************
             // ***************** DRAW BOUNDING BOXES *****************
