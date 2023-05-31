@@ -304,7 +304,7 @@ namespace GenerateRandomScatter
 
         static void Main(string[] args)
         {
-            int plotsCount = 50;
+            int plotsCount = 5_000;
 
             _vocSerializer = new PascalVocXmlSerializer();
             _random = new Random(42);
@@ -316,7 +316,7 @@ namespace GenerateRandomScatter
 
             CheckFolders();
 
-            var data = new ConcurrentDictionary<int, (IEnumerable<RectangleF> points, IEnumerable<RectangleF> ticks, IEnumerable<RectangleF> labels)>();
+            var data = new ConcurrentDictionary<int, (int width, int height, IEnumerable<RectangleF> points, IEnumerable<RectangleF> ticks, IEnumerable<RectangleF> labels)>();
 
             //for (int i = 0; i < plotsCount; i++)
             System.Threading.Tasks.Parallel.For(1, plotsCount + 1, i =>
@@ -327,13 +327,21 @@ namespace GenerateRandomScatter
 
             CocoFile cocoFile = new CocoFile()
             {
-                 categories = new CocoCategory[]
+                categories = new CocoCategory[]
                  {
                      new CocoCategory() { id = 1, name = "points" },
                      new CocoCategory() { id = 2, name = "ticks" },
                      new CocoCategory() { id = 3, name = "labels" }
                  },
-                info = new CocoInfo() { contributor = "todo" }
+                info = new CocoInfo()
+                {
+                    contributor = "todo",
+                    date_created = "2023-05-29",
+                    description = "scatter plots",
+                    url = "",
+
+                },
+                //licenses = new CocoLicense[] { }
             };
 
             CocoImage[] cocoImages = new CocoImage[data.Count];
@@ -348,18 +356,20 @@ namespace GenerateRandomScatter
                 {
                     id = kvp.Key,
                     file_name = $"plot_{kvp.Key}.png",
-                    width = 600,
-                    height = 400
+                    width = kvp.Value.width,
+                    height = kvp.Value.height
                 };
-
+                int annotationId = 1;
                 foreach (var point in kvp.Value.points)
                 {
                     CocoAnnotation cocoAnnotation = new CocoAnnotation()
                     {
-                        bbox = new float[] { point.Left, point.Top, point.Width, point.Height },
+                        bbox = new float[] { point.X, point.Y, point.Width, point.Height },
                         category_id = 1,
                         image_id = kvp.Key,
-                        segmentation = new float[][] { new float[] { point.Left, point.Top, point.Width, point.Height } }
+                        segmentation = new float[0][],
+                        id = kvp.Key,
+                        area = point.Width * point.Height
                     };
                     annotations.Add(cocoAnnotation);
                 }
@@ -368,10 +378,12 @@ namespace GenerateRandomScatter
                 {
                     CocoAnnotation cocoAnnotation = new CocoAnnotation()
                     {
-                        bbox = new float[] { tick.Left, tick.Top, tick.Width, tick.Height },
+                        bbox = new float[] { tick.X, tick.Y, tick.Width, tick.Height },
                         category_id = 2,
                         image_id = kvp.Key,
-                        segmentation = new float[][] { new float[] { tick.Left, tick.Top, tick.Width, tick.Height } }
+                        segmentation = new float[0][],
+                        id = kvp.Key,
+                        area = tick.Width * tick.Height
                     };
                     annotations.Add(cocoAnnotation);
                 }
@@ -380,10 +392,12 @@ namespace GenerateRandomScatter
                 {
                     CocoAnnotation cocoAnnotation = new CocoAnnotation()
                     {
-                        bbox = new float[] { label.Left, label.Top, label.Width, label.Height },
+                        bbox = new float[] { label.X, label.Y, label.Width, label.Height },
                         category_id = 3,
                         image_id = kvp.Key,
-                        segmentation = new float[][] { new float[] { label.Left, label.Top, label.Width, label.Height } }
+                        segmentation = new float[0][],
+                        id = kvp.Key,
+                        area = label.Width * label.Height
                     };
                     annotations.Add(cocoAnnotation);
                 }
@@ -391,6 +405,14 @@ namespace GenerateRandomScatter
 
             cocoFile.images = cocoImages;
             cocoFile.annotations = annotations.ToArray();
+
+            string cocoJson = System.Text.Json.JsonSerializer.Serialize(cocoFile, new System.Text.Json.JsonSerializerOptions()
+            {
+                WriteIndented = true,
+                DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+            });
+
+            File.WriteAllText(Path.Combine(RootFoler, ImageFolder, "data.json"), cocoJson);
 
             Console.WriteLine("Done. Press any key.");
             Console.ReadKey();
@@ -609,7 +631,7 @@ namespace GenerateRandomScatter
         /// </summary>
         /// <param name="name"></param>
         /// <param name="directory"></param>
-        private static (IEnumerable<RectangleF> points, IEnumerable<RectangleF> ticks, IEnumerable<RectangleF> labels) GetRandomPlot(int id)
+        private static (int width, int height, IEnumerable<RectangleF> points, IEnumerable<RectangleF> ticks, IEnumerable<RectangleF> labels) GetRandomPlot(int id)
         {
             // RESOLUTION AND TICK SIZE
             int dpi = (int)(dpi_min + _random.NextDouble() * (dpi_max - dpi_min));
@@ -818,10 +840,10 @@ namespace GenerateRandomScatter
             model.InvalidatePlot(true);
 
             // export as PDF
-            using (var stream = File.Create(Path.Combine(RootFoler, ImageFolder, $"plot_{id}.pdf")))
-            {
-                PdfExporter.Export(model, stream, 600, 400);
-            }
+            //using (var stream = File.Create(Path.Combine(RootFoler, ImageFolder, $"plot_{id}.pdf")))
+            //{
+                //PdfExporter.Export(model, stream, 600, 400);
+            //}
             
             // export as PNG
             var pngExporter = new PngExporter()
@@ -838,10 +860,10 @@ namespace GenerateRandomScatter
             {
                 plotBitmap.Save(Path.Combine(RootFoler, ImageFolder, imageFileName), System.Drawing.Imaging.ImageFormat.Png);
 
-                using (var stimulusBitmap = GetStimulusImage(plotBitmap))
-                {
-                    stimulusBitmap.Save(Path.Combine(RootFoler, ImageFolder, stimulusFileName), System.Drawing.Imaging.ImageFormat.Png);
-                }
+                //using (var stimulusBitmap = GetStimulusImage(plotBitmap))
+                //{
+                //    stimulusBitmap.Save(Path.Combine(RootFoler, ImageFolder, stimulusFileName), System.Drawing.Imaging.ImageFormat.Png);
+                //}
             }
 
             var groundTruth = pngExporter.GroundTruth;
@@ -851,7 +873,6 @@ namespace GenerateRandomScatter
             //File.WriteAllText(Path.Combine(RootFoler, PlotsFolder, name + "_model.json"), JsonConvert.SerializeObject(model, Formatting.Indented, new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
             //File.WriteAllText(Path.Combine(RootFoler, PlotsFolder, name + "_gt.json"), JsonConvert.SerializeObject(groundTruth, Formatting.Indented));
             //File.WriteAllText(Path.Combine(RootFoler, PlotsFolder, name + "_gtt.json"), JsonConvert.SerializeObject(groundTruthText, Formatting.Indented));
-
 
             var boxesPoints = get_data_pixel(xAxis, yAxis, dpi, model.Series, groundTruth);
 
@@ -863,7 +884,7 @@ namespace GenerateRandomScatter
             var boxesLabels = boxesLabelsTuple.Item1.ToList();
             boxesLabels.AddRange(boxesLabelsTuple.Item2);
 
-            return (boxesPoints, boxesTicks, boxesLabels);
+            return (figsize[0], figsize[1], boxesPoints, boxesTicks, boxesLabels);
 
             /*
             PascalVocAnnotation annotationImage = new PascalVocAnnotation()
@@ -1143,7 +1164,9 @@ namespace GenerateRandomScatter
                             foreach (var point in screenPoints)
                             {
                                 var nearest = nn.Nearest(new double[] { point.X, point.Y });
-                                yield return nearest.Value;
+                                var rect = nearest.Value;
+                                rect.Inflate(5, 5);
+                                yield return rect;
                             }
                             break;
 
@@ -1155,7 +1178,9 @@ namespace GenerateRandomScatter
                             foreach (var point in screenPoints)
                             {
                                 var nearest = nnPolygon.Nearest(new double[] { point.X, point.Y });
-                                yield return nearest.Value;
+                                var rect = nearest.Value;
+                                rect.Inflate(5, 5);
+                                yield return rect;
                             }
                             break;
 
@@ -1166,7 +1191,9 @@ namespace GenerateRandomScatter
                             foreach (var point in screenPoints)
                             {
                                 var nearest = nnRectangle.Nearest(new double[] { point.X, point.Y });
-                                yield return nearest.Value;
+                                var rect = nearest.Value;
+                                rect.Inflate(5, 5);
+                                yield return rect;
                             }
                             break;
 
@@ -1185,6 +1212,8 @@ namespace GenerateRandomScatter
                                 {
                                     rect = rect.Union(nearest[i].Node.Value);
                                 }
+
+                                rect.Inflate(5, 5);
                                 yield return rect;
                             }
                             break;
@@ -1218,7 +1247,7 @@ namespace GenerateRandomScatter
             yAxis.GetTickValues(out IList<double> labelValuesY, out IList<double> majorTicksY, out IList<double> minorTicksY);
 
             var groundTruthTicksX = groundTruth["Line"].Where(r => r.Width == 0);
-            foreach (var tickValue in majorTicksX.Where(t => t > xAxis.ActualMinimum).Where(t => t < xAxis.ActualMaximum))
+            foreach (var tickValue in majorTicksX.Where(t => t > xAxis.ActualMinimum && t < xAxis.ActualMaximum))
             {
                 float x = (float)xAxis.Transform(tickValue);
                 var ticks = groundTruthTicksX.Where(r => r.X == x).ToList();
@@ -1234,17 +1263,20 @@ namespace GenerateRandomScatter
                 }
 
                 float minHeight = ticks.Min(t => t.Height);
-                var selected = ticks.Where(t => t.Height == minHeight).First(); // take the smallest
+                var selected = ticks.First(t => t.Height == minHeight); // take the smallest
                 float newHeight = selected.Height < 10 ? 10 : selected.Height;
                 float newWidth = newHeight;
                 float y0 = (selected.Top + selected.Bottom) / 2f;
 
                 groundTruth["Line"].Remove(selected);
-                boxes_x.Add(new RectangleF(x - newWidth / 2f, y0 - newHeight / 2f, newWidth, newHeight));
+
+                var rect = new RectangleF(x - newWidth / 2f, y0 - newHeight / 2f, newWidth, newHeight);
+                rect.Inflate(7, 7);
+                boxes_x.Add(rect);
             }
 
             var groundTruthTicksY = groundTruth["Line"].Where(r => r.Height == 0);
-            foreach (var tickValue in majorTicksY.Where(t => t > yAxis.ActualMinimum).Where(t => t < yAxis.ActualMaximum))
+            foreach (var tickValue in majorTicksY.Where(t => t > yAxis.ActualMinimum && t < yAxis.ActualMaximum))
             {
                 float y = (float)yAxis.Transform(tickValue);
                 var ticks = groundTruthTicksY.Where(r => r.Y == y).ToList();
@@ -1260,13 +1292,16 @@ namespace GenerateRandomScatter
                 }
 
                 float minWidth = ticks.Min(t => t.Width);
-                var selected = ticks.Where(t => t.Width == minWidth).First(); // take the shortest line, other should be a grid line
+                var selected = ticks.First(t => t.Width == minWidth); // take the shortest line, other should be a grid line
                 float newWidth = selected.Width < 10 ? 10 : selected.Width;
                 float newHeight = newWidth;
                 float x0 = (selected.Left + selected.Right) / 2f;
 
                 groundTruth["Line"].Remove(selected);
-                boxes_x.Add(new RectangleF(x0 - newWidth / 2f, y - newHeight / 2.0f, newWidth, newHeight));
+
+                var rect = new RectangleF(x0 - newWidth / 2f, y - newHeight / 2.0f, newWidth, newHeight);
+                rect.Inflate(7, 7);
+                boxes_x.Add(rect); // TODO - should be y
             }
 
             return new Tuple<IEnumerable<RectangleF>, IEnumerable<RectangleF>>(boxes_x, boxes_y);
